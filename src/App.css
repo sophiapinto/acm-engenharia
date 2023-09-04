@@ -1,3 +1,7 @@
+body{
+    background-color: #1E1E1E;
+}
+
 .imagem-bg {
     background: url(./assets/background.png) no-repeat;
     width: auto;
@@ -135,4 +139,147 @@
     font-weight: 700;
     line-height: normal;
     margin: 30px;
+}
+
+
+@media screen and (min-width: 380px) {
+    .intro-wrapper {
+        position: relative;
+        top: -350px;
+        width: 110%;
+        height: 30%;
+        padding-bottom: 30px;
+        background: #1E1E1E;
+        opacity: 0.8;
+        text-align: center;
+        display: block;
+    }
+    .imagem-bg {
+        background: url(./assets/background.png) no-repeat;
+        width: 110%;
+        height: 400px;
+        background-size: 100%;
+    }
+    .titulo-intro {
+        width: 400px;
+        height: 48px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .subtitulo-intro {
+        width: 494px;
+        height: 48px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .quem-somos-wrapper {
+        position: relative;
+        top: -350px;
+        width: 110%;
+        height: 25%;
+        padding-bottom: 30px;
+        background: rgba(0, 30, 90, 0.90);
+        text-align: center;
+        padding-bottom: 30px;
+        display: block;
+    
+    }
+    
+    .titulo-quem-somos {
+        width: 153px;
+        height: 25px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    
+    .texto-quem-somos {
+        width: 550px;
+        height: 62px;
+        flex-shrink: 0;
+        color: #FCFCFC;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .button-quem-somos {
+        width: 250px;
+        height: 50px;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 3px;
+        background: #FFF;
+        padding: 5px; 
+        margin: 5px;
+    }
+
+    .servicos-wrapper {
+        position: relative;
+        text-align: center;
+        top: -350px;
+        width: 110%;
+        height: 40%;
+        flex-shrink: 0;
+        opacity: 0.8;
+        background: #000;
+        padding-bottom: 80px;
+        display: block;
+    
+    }
+    
+    .titulo-servicos {
+        width: 153px;
+        height: 25px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+    }
+    
+    .servicos-item {
+        position: relative;
+        width: 250px;
+        height: 20px;
+        flex-shrink: 0;
+        color:#FFF;
+        display: inline-block;
+        text-align: left;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        top: 20px;
+        margin: 10px;
+    }
+                   
 }

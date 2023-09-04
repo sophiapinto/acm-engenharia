@@ -66,3 +66,23 @@ input {
     margin-left: 20px;
     margin-top: 10px;
 }
+
+@media screen and (min-width: 380px) {
+
+    .form-wrapper {
+        position: relative;
+        width: 110%;
+        height: 150%;
+        padding-bottom: 40px;
+        bottom: 0px;
+        top: -400px;
+        flex-shrink: 0;
+        background: #000;
+        display: block;
+        text-align: center;
+        display: list-item;
+        align-items: center; 
+    }
+    
+    
+}

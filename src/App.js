@@ -22,7 +22,7 @@ function App() {
         <span className='texto-quem-somos'><br/>Empresa do ramo da construção civil que visa projetar, <br/>gerenciar e excecutar com eficiência e eficácia<br/> o planejamento e controle de obras.<br/></span>
         
         <button className='button-quem-somos'>
-          <span>CONHEÇA NOSSO RESPONSÁVEL TÉCNICO</span>
+          <span>CONHEÇA NOSSO <br/>RESPONSÁVEL TÉCNICO</span>
         </button>
       </div>
 
@@ -30,11 +30,11 @@ function App() {
       <span className='titulo-servicos'><br/>SERVIÇOS<br/></span>
 
         <div class="servicos-nav">
-              <ul className='servicos-item'>Administração de obra</ul>
-              <ul className='servicos-item'>Projeto Estrutural</ul>
-              <ul className='servicos-item'>Responsabilidade Técnica de Execução</ul>
-              <ul className='servicos-item'>Visita Técnica</ul>
-              <ul className='servicos-item'>Consultoria Técnica</ul>
+              <ul className='servicos-item'>◇ Administração de obra</ul>
+              <ul className='servicos-item'>◇ Projeto Estrutural</ul>
+              <ul className='servicos-item'>◇ Responsabilidade Técnica de Execução</ul>
+              <ul className='servicos-item'>◇ Visita Técnica</ul>
+              <ul className='servicos-item'>◇ Consultoria Técnica</ul>
           </div>
       </div>
 
