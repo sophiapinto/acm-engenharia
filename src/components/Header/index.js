@@ -4,16 +4,16 @@ import './header.css';
 function Header() {
     
   return (
-    <div className="header">
-     <img src={logo} className="logo-acm" alt="logo" />
-        
-        <div class="topnav">
-            <a href="#quem-somos">Quem somos</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#contato">Contato</a>
-        </div>
-    </div>
+      <div className="header">
+      <img src={logo} className="logo-acm" alt="logo" />
+          
+          <div class="topnav">
+              <a href="#quem-somos">Quem somos</a>
+              <a href="#servicos">Serviços</a>
+              <a href="#portfolio">Portfólio</a>
+              <a href="#contato">Contato</a>
+          </div>
+      </div>
   );
 }
 
