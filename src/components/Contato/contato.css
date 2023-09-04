@@ -26,6 +26,7 @@
 }
 
 .input-contato {
+    display: inline-block;
     width: 240px;
     height: 36px;
     flex-shrink: 0;   

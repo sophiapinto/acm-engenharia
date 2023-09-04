@@ -20,8 +20,9 @@ function App() {
       <div className='quem-somos-wrapper'>
         <span className='titulo-quem-somos'><br/>QUEM SOMOS<br/></span>
         <span className='texto-quem-somos'><br/>Empresa do ramo da construção civil que visa projetar, <br/>gerenciar e excecutar com eficiência e eficácia<br/> o planejamento e controle de obras.<br/></span>
-        <button>
-          <span className='button-quem-somos'>CONHEÇA NOSSO RESPONSÁVEL TÉCNICO</span>
+        
+        <button className='button-quem-somos'>
+          <span>CONHEÇA NOSSO RESPONSÁVEL TÉCNICO</span>
         </button>
       </div>
 
