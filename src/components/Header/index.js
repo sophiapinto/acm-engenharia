@@ -8,7 +8,7 @@ function Header() {
       <img src={logo} className="logo-acm" alt="logo" />
           
           <div class="topnav">
-              <a href="#quem-somos">Quem somos</a>
+              <a href="#quem-somos">Sobre</a>
               <a href="#servicos">Serviços</a>
               <a href="#portfolio">Portfólio</a>
               <a href="#contato">Contato</a>
