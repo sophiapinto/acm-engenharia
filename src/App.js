@@ -1,10 +1,16 @@
-import Header from '../src/components/Header/index.js';
-import './App.css';
+import Header from './components/Header/index.js';
+import Footer from './components/Footer/index.js';
 
 function App() {
   return (
-    <Header  />
-  );
+    <div>
+      <Header  />
+
+      <Footer  />
+
+    </div>
+    
+    );
 }
 
 export default App;
