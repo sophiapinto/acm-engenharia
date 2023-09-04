@@ -6,7 +6,8 @@ function Contato() {
     <div className='form-wrapper'>
 
         <span className='titulo-contato'><br/>ENVIE SUA MENSAGEM<br/></span>
-        <form>
+        
+        <form className='contato'>
             <input className= "input-contato input-contato-nome" type="text" name="Nome" placeholder="Insira seu nome">
             </input>
             <input className= "input-contato input-contato-email" type="email" name="Email" placeholder="Insira seu e-mail">
@@ -14,7 +15,8 @@ function Contato() {
             <input className= "input-contato input-contato-mensagem" type="text" name="Mensagem" placeholder="Insira sua mensagem">
             </input>
                     
-            <button className='button-contato' type="submit">Enviar</button>
+            <input className='input-contato button-contato' type="submit" name="Enviar" placeholder="Enviar">
+            </input>
                 
 
         </form>
