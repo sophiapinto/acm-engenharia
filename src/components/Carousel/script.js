@@ -14,6 +14,7 @@ next.addEventListener("click", e => {
     next.style.display = "none";
   }
 });
+
 prev.addEventListener("click", e => {
   carousel.scrollBy(-(width + gap), 0);
   if (carousel.scrollLeft - width - gap <= 0) {

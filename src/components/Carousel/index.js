@@ -13,8 +13,11 @@ import image09 from '../../assets/images/image 9.jpg';
 
 function Carousel () {
   return (
-
+    
     <div id="carousel-wrapper">
+      
+      <script src='./script.js'></script>
+
       <span className='titulo-portfolio'><br/>PORTFÓLIO<br/></span>
 
       <div id="carousel">
@@ -43,6 +46,7 @@ function Carousel () {
           <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
         </svg>
       </button>
+
       <button id="next">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,11 +58,9 @@ function Carousel () {
           <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
         </svg>
       </button>
-
-      <script src="script.js" />
-
+        
     </div>
-            
+      
   );
 }
 
