@@ -1,5 +1,4 @@
 import './carousel.css';
-import './script';
 
 import image01 from '../../assets/images/image 1.jpg';
 import image02 from '../../assets/images/image 2.jpg';
@@ -16,26 +15,60 @@ function Carousel () {
     
     <div id="carousel-wrapper">
       
-      <script src='./script.js'></script>
-
       <span className='titulo-portfolio'><br/>PORTFÓLIO<br/></span>
 
       <div id="carousel">
         <div id="content">
 
-          <img src={image01} class="item" alt="item" />   
-          <img src={image02} class="item" alt="item" />   
-          <img src={image03} class="item" alt="item" />   
-          <img src={image04} class="item" alt="item" />   
-          <img src={image05} class="item" alt="item" />   
-          <img src={image06} class="item" alt="item" />   
-          <img src={image07} class="item" alt="item" />
-          <img src={image08} class="item" alt="item" />
-          <img src={image09} class="item" alt="item" />
+          <img src={image01} className="item" alt="item" />   
+          <img src={image02} className="item" alt="item" />   
+          <img src={image03} className="item" alt="item" />   
+          <img src={image04} className="item" alt="item" />   
+          <img src={image05} className="item" alt="item" />   
+          <img src={image06} className="item" alt="item" />   
+          <img src={image07} className="item" alt="item" />
+          <img src={image08} className="item" alt="item" />
+          <img src={image09} className="item" alt="item" />
         </div>
       </div>
 
-      <button id="prev">
+      <button id="prev" onClick={
+      
+        function CarouselPort() {
+          const gap = 16;
+        
+          const carousel = document.getElementById("carousel"),
+            content = document.getElementById("content"),
+            next = document.getElementById("next"),
+            prev = document.getElementById("prev");
+        
+          next.addEventListener("click", e => {
+            carousel.scrollBy(width + gap, 0);
+            if (carousel.scrollWidth !== 0) {
+              prev.style.display = "flex";
+            }
+            if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+              next.style.display = "none";
+            }
+          });
+        
+          prev.addEventListener("click", e => {
+            carousel.scrollBy(-(width + gap), 0);
+            if (carousel.scrollLeft - width - gap <= 0) {
+              prev.style.display = "none";
+            }
+            if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+              next.style.display = "flex";
+            }
+          });
+        
+          let width = carousel.offsetWidth;
+          window.addEventListener("resize", e => (width = carousel.offsetWidth));
+        
+        }
+      
+      
+      }>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -47,7 +80,42 @@ function Carousel () {
         </svg>
       </button>
 
-      <button id="next">
+      <button id="next" onClick={
+        function CarouselPort() {
+          const gap = 16;
+
+          const carousel = document.getElementById("carousel"),
+            content = document.getElementById("content"),
+            next = document.getElementById("next"),
+            prev = document.getElementById("prev");
+
+          next.addEventListener("click", e => {
+            carousel.scrollBy(width + gap, 0);
+            if (carousel.scrollWidth !== 0) {
+              prev.style.display = "flex";
+            }
+            if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+              next.style.display = "none";
+            }
+          });
+
+          prev.addEventListener("click", e => {
+            carousel.scrollBy(-(width + gap), 0);
+            if (carousel.scrollLeft - width - gap <= 0) {
+              prev.style.display = "none";
+            }
+            if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+              next.style.display = "flex";
+            }
+          });
+
+          let width = carousel.offsetWidth;
+          window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+        }
+
+
+      }>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
