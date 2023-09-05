@@ -8,19 +8,23 @@ function Contato() {
         <span className='titulo-contato'><br/>ENVIE SUA MENSAGEM<br/></span>
         
         
-        <form className='contato' id="Forms-Contato">
-            <input className= "input-contato input-contato-nome" type="text" name="Nome" placeholder="Insira seu nome" required>
+        <form className='contato' id="Forms-Contato" method='POST' data-email="sarahsophiapinto@gmail.com"
+        action='https://script.google.com/macros/s/AKfycbww52oX9orU4dvLlDcmjtuvmLhVXHNC7cw0Cb6rb7UU59cuE20BE9YtT9kf7k42UUo3/exec'
+        >
+            <input className= "input-contato input-contato-nome" type="text" name="name" placeholder="Insira seu nome" required>
             </input>
-            <input className= "input-contato input-contato-email" type="email" name="Email" placeholder="Insira seu e-mail" required>
+            <input className= "input-contato input-contato-email" type="email" name="email" placeholder="Insira seu e-mail" required>
             </input>
-            <input className= "input-contato input-contato-mensagem" type="text" name="Mensagem" placeholder="Insira sua mensagem" required>
+            <input className= "input-contato input-contato-mensagem" type="text" name="mensage" placeholder="Insira sua mensagem" required>
             </input>
                     
-            <input className='input-contato button-contato' type="submit" value="Enviar" name="Enviar" placeholder="Enviar">
-            </input>
+            <button className='input-contato button-contato' type="submit">
+              Enviar
+            </button>
         </form>
 
-        <script src="script.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
 
     </div>
 
