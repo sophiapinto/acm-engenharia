@@ -16,6 +16,8 @@
 }
 
 .topnav {
+    position: relative;
+    top: 0;
     width: 50%;
     height: 30%;
     float: right;
@@ -28,9 +30,9 @@
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 90%;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 80px;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -41,7 +43,7 @@
 }
 
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 380px){
   
     .logo-acm {
         position: fixed;
@@ -55,21 +57,13 @@
     .topnav {
         position: relative;
         width: 50%;
-        height: 30%;
-        float: right;
-        left: -100px;
-        margin-top: 2%;
-    }
-
-    .topnav a {
-        width: 50%;
-        height: 30%;
-        flex-shrink: 0;
-        padding-left: 15px;
+        height: 10%;
+        top: 20px;
+        left: -115px;
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 12px;
+        font-size: 80%;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
