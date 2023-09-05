@@ -1,6 +1,8 @@
 import Header from './components/Header/index.js';
 import Footer from './components/Footer/index.js';
 import Contato from './components/Contato/index.js';
+import Carousel from './components/Carousel/index.js';
+
 
 import "./App.css";
 
@@ -38,10 +40,12 @@ function App() {
           </div>
       </div>
 
+      <Carousel  />
+
       <Contato  />
-
+      
       <Footer  />
-
+    
     </div>
     
     );
