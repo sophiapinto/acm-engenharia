@@ -6,14 +6,13 @@ import Footer from './components/Footer/index.js';
 import Contato from './components/Contato/index.js';
 import Carousel from './components/Carousel/index.js';
 
-
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Header  />
-
+      <Header />
+      
       <div className='imagem-bg'  />
 
       <div className='intro-wrapper'>

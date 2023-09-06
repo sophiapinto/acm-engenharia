@@ -1,4 +1,4 @@
-(function() {
+export default function formAjax () {
     // get all data in form and return object
     function getFormData(form) {
       var elements = form.elements;
@@ -10,7 +10,7 @@
           return false;
         }
         return true;
-      }).map(function(k) {
+      }).map((function(k) {
         if(elements[k].name !== undefined) {
           return elements[k].name;
         // special case for Edge's html collection
@@ -19,7 +19,7 @@
         }
       }).filter(function(item, pos, self) {
         return self.indexOf(item) === pos && item;
-      });
+      }));
   
       var formData = {};
       fields.forEach(function(name){
@@ -102,4 +102,4 @@
         buttons[i].disabled = true;
       }
     }
-  })();
+}

@@ -1,7 +1,3 @@
-Header {
-    width: 100%;
-}
-
 Footer {
     width: 100%;
 }
@@ -10,6 +6,17 @@ body{
     background-color: #000;
 }
 
+
+.heade-wrapper {
+    position: relative;
+    align-items: center;
+    background-color: #1E1E1E;    
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 .imagem-bg {
     background: url(./assets/background.png) no-repeat;
     width: auto;
